@@ -13,6 +13,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin: auto;
+  top: 0;
+  position: sticky;
+  background-color: #212121;
+  padding-top: 10px;
+
   /* border: 1px solid green; */
 }
 
@@ -55,8 +60,8 @@ nav {
   background: #121212;
   width: 25vw;
   outline: none;
-  height: 35px;
-  /* padding: 3px 5px; */
+  height: 40px;
+  padding: 0px 5px;
 }
 
 #searchVideo{
@@ -70,6 +75,7 @@ nav {
   margin: 2px 5px;
   padding-top: 5px;
   font-size: 14px;
+  cursor: pointer;
    /* border: 1px solid blue; */
 }
 
@@ -108,6 +114,7 @@ nav {
   background-color: #212121;
   color: #fff;
   padding: 10px;
+  overflow-y: scroll;
   /* border: 1px solid wheat; */
 }
 
@@ -116,21 +123,30 @@ nav {
   text-decoration: none;
 }
 
-.sidebar-items,
+.sidebar-items{
+  display: flex;
+  align-items: center;
+  text-align: start;
+  font-size: 14px;
+  margin: 5px 0px;
+  cursor: pointer;
+  padding: 5px 0px;
+}
+
+
 .suscribed-channel {
   display: flex;
   align-items: center;
   text-align: start;
   font-size: 14px;
   margin: 5px 0px;
-  /* border: 1px solid blue; */
   cursor: pointer;
   padding: 3px 0px;
 }
 .sidebar-items span,
 .suscribed-channel > img,
 .suscribed-channel > span {
-  font-size: 16px;
+  font-size: 24px;
   margin-inline: 5px;
 }
 
@@ -168,6 +184,8 @@ main {
 }
 .categories {
   margin: 10px 0px;
+  padding: 0px 10px;
+
 }
 
 .categories a {
@@ -177,7 +195,7 @@ main {
   padding: 5px 8px;
   border-radius: 32px;
   margin: 2px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .categories a:active,
@@ -185,7 +203,7 @@ main {
   background-color: #fff;
   color: #212121;
 }
-.contents {
+#contents {
   display: flex;
   flex-wrap: wrap;
   background-color: #000;
@@ -193,21 +211,31 @@ main {
   width: 100%;
 }
 
-.content {
+#content {
   width: 276px;
   height: 247px;
   padding: 0px, 0px, 18px, 0px;
-  background-color: wheat;
+/* border:1px solid wheat; */
   margin: 10px;
+  border-radius: 5px;
 
 }
 
-.thumbnail {
+#thumbnail {
   width: 276px;
   height: 155px;
   background-color: gray;
+  border-radius: 5px 5px 5px 5px;
+  /* border:1px solid rgb(9, 219, 13); */
+
+
 }
 
+#thumbnailImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .details {
   display: flex;
 }
@@ -222,4 +250,10 @@ main {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  height: 100px;
+
+}
+
+#video-title{
+  overflow: hidden;
 }
