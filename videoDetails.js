@@ -1,3 +1,4 @@
+const api_key = "AIzaSyCr-h_-fEfz9CIzv0kJ6W8rQayPDchRekU";
 
 const contents = document.getElementById("contents");
 const searchVideo =  document.getElementById("searchVideo")

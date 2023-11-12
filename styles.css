@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #212121;
+  background-color: #000;
+
 }
 
 nav {
@@ -15,7 +16,8 @@ nav {
   margin: auto;
   top: 0;
   position: sticky;
-  background-color: #212121;
+  background-color: #000;
+
   padding-top: 10px;
 
   /* border: 1px solid green; */
@@ -111,7 +113,8 @@ nav {
 /* SIDE BAR DESIGN */
 .sidebar {
   width: 240px;
-  background-color: #212121;
+  background-color: #000;
+
   color: #fff;
   padding: 10px;
   overflow-y: scroll;
