@@ -221,6 +221,7 @@ main {
 /* border:1px solid wheat; */
   margin: 10px;
   border-radius: 5px;
+  cursor: pointer;
 
 }
 
@@ -259,4 +260,6 @@ main {
 
 #video-title{
   overflow: hidden;
+  max-height: 40px;
+  text-overflow: unset;
 }
